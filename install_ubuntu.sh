@@ -1,10 +1,9 @@
-!/bin/bash
+#!/bin/bash
 
-apt-get update
+apt update
 
 # install zsh
-apt-get insall zsh
-
+apt insall zsh
 zsh
 
 # install prezto
@@ -18,11 +17,9 @@ done
 # install peco
 apt install peco
 
-# 
+# install peco history
 git clone https://github.com/jimeh/zsh-peco-history.git ~/.zsh/zsh-peco-history
-
-# add this line to .zshrc
-#source ~/.zsh/zsh-peco-history/zsh-peco-history.zsh
+echo "source ~/.zsh/zsh-peco-history/zsh-peco-history.zsh" >> ~/.zshrc
 
 # set default zsh
 #chsh -s /bin/zsh
